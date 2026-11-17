@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KooL-Starterkit</title>
+<style>
+:root{
+  --navy:#12285a; --navy-dark:#0c1b3f; --white:#fff; --grey:#eef1f5; --grey-line:#d5dbe5; --text:#1b2438; --muted:#4a556d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--grey);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;font-size:17px}
+header{background:var(--navy);color:var(--white);padding:40px 20px 32px;text-align:center}
+header h1{margin:0 0 8px;font-size:clamp(2rem,7vw,3rem);letter-spacing:-.02em}
+header p{margin:0 auto;max-width:34em;color:#d6e0f7;font-size:1.05rem}
+nav{position:sticky;top:0;z-index:10;background:var(--navy-dark);padding:10px 12px}
+nav ul{list-style:none;margin:0 auto;padding:0;display:flex;gap:8px;max-width:960px;overflow-x:auto;scrollbar-width:thin}
+nav a{display:block;white-space:nowrap;padding:8px 14px;border-radius:999px;background:var(--white);color:var(--navy);text-decoration:none;font-weight:600;font-size:.92rem}
+nav a:hover,nav a:focus-visible{background:#cfdcf7;outline:2px solid var(--white);outline-offset:2px}
+main{max-width:960px;margin:0 auto;padding:24px 16px 8px;display:grid;gap:20px}
+@media(min-width:800px){main{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+article,section.faq{background:var(--white);border:1px solid var(--grey-line);border-radius:10px;padding:22px 20px}
+article h2,section.faq h2{margin:0 0 14px;color:var(--navy);font-size:1.4rem;line-height:1.25;padding-bottom:10px;border-bottom:3px solid var(--navy)}
+h3{margin:18px 0 6px;font-size:1.05rem;color:var(--navy)}
+article p,article ol,section.faq p{margin:0}
+ol{padding-left:1.3em}
+ol li{margin-bottom:6px}
+.tip{margin-top:18px;background:var(--grey);border-left:4px solid var(--navy);border-radius:6px;padding:10px 14px}
+.tip h3{margin:0 0 4px}
+figure{margin:16px 0 0}
+figure img{display:block;width:100%;height:auto;border:1px solid var(--grey-line);border-radius:8px;background:var(--grey)}
+figure.missing img{display:none}
+figure .placeholder{display:none;padding:28px 16px;text-align:center;border:2px dashed var(--grey-line);border-radius:8px;color:var(--muted);font-size:.95rem}
+figure.missing .placeholder{display:block}
+figcaption{margin-top:8px;font-size:.92rem;color:var(--muted)}
+.faq dl{margin:0}
+.faq dt{font-weight:700;color:var(--navy);margin-top:14px}
+.faq dd{margin:4px 0 0}
+footer{margin-top:24px;background:var(--navy-dark);color:#d6e0f7;text-align:center;padding:20px 16px;font-size:.92rem}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>KooL-Starterkit</h1>
+  <p>Dein Peer-Guide für den Start – einfach erklärt von Schüler:innen für Schüler:innen</p>
+</header>
+
+<nav aria-label="Sprungmarken">
+  <ul>
+    <li><a href="#arbeitsplan">Arbeitsplan</a></li>
+    <li><a href="#arbeitsweise">Arbeitsweise</a></li>
+    <li><a href="#stundenplan">Stundenplan</a></li>
+    <li><a href="#moodle">Moodle</a></li>
+    <li><a href="#kernzeiten">Kernzeiten</a></li>
+    <li><a href="#raumwahl">Raumwahl</a></li>
+    <li><a href="#faq">Häufige Fragen</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<article id="arbeitsplan">
+  <h2>Arbeitsplan</h2>
+  <h3>Worum geht's?</h3>
+  <p>Der Arbeitsplan zeigt dir, welche Aufgaben du in einem bestimmten Zeitraum erledigen musst, und ersetzt oft das klassische Tafelbild.</p>
+  <h3>So geht's</h3>
+  <ol>
+    <li>Aufgaben auf dem Plan durchlesen und den Umfang einschätzen.</li>
+    <li>Entscheiden, welche Aufgaben du analog (auf Papier) oder digital bearbeitest.</li>
+    <li>Erledigte Aufgaben abhaken, um den Überblick zu behalten.</li>
+  </ol>
+  <div class="tip"><h3>Unser Tipp</h3><p>Frag nach analogen Arbeitsblättern, wenn dir langes Arbeiten am Bildschirm schwerfällt.</p></div>
+</article>
+
+<article id="arbeitsweise">
+  <h2>Arbeitsweise</h2>
+  <h3>Worum geht's?</h3>
+  <p>In den KooL-Fächern (Deutsch, Mathematik, Englisch) gibt es nur gelegentlich kurze Inputs (Frontalunterricht). Die meiste Zeit arbeitest du selbstständig oder in Gruppen.</p>
+  <h3>So geht's</h3>
+  <ol>
+    <li>Aufgabenstellung genau lesen.</li>
+    <li>Entscheiden, ob du die Aufgabe alleine oder im Team bearbeitest.</li>
+    <li>Konzentriert an deinem Ziel arbeiten und Zwischenergebnisse sichern.</li>
+  </ol>
+  <div class="tip"><h3>Unser Tipp</h3><p>Sucht euch Gruppen, in denen alle dasselbe Ziel haben – oder arbeitet alleine, wenn ihr so besser vorankommt.</p></div>
+</article>
+
+<article id="stundenplan">
+  <h2>Stundenplan</h2>
+  <h3>Worum geht's?</h3>
+  <p>Am Anfang bekommst du einen großen Gesamtstundenplan, auf dem auch Kurse stehen, die du gar nicht belegt hast.</p>
+  <h3>So geht's</h3>
+  <ol>
+    <li>Alle Fächer und Kurse streichen, die du nicht gewählt hast.</li>
+    <li>Bei Naturwissenschaften und Wahlkursen die endgültige Einteilung abwarten.</li>
+    <li>Deinen eigenen, übersichtlichen Plan zusammenstellen.</li>
+  </ol>
+  <div class="tip"><h3>Unser Tipp</h3><p>Schreib dir deinen persönlichen Stundenplan direkt sauber ab oder speichere ihn als Hintergrundbild auf dem Tablet.</p></div>
+</article>
+
+<article id="moodle">
+  <h2>Moodle (Lernplattform)</h2>
+  <h3>Worum geht's?</h3>
+  <p>Moodle ist unsere zentrale digitale Lernplattform, auf der alle Arbeitsmaterialien, Termine und Themenblöcke übersichtlich als Kacheln aufgebaut sind.</p>
+  <h3>So geht's</h3>
+  <ol>
+    <li>Über das Schulportal mit deinen Zugangsdaten einloggen und das gewünschte Fach auswählen.</li>
+    <li>Oben unter „Ankündigungen“ und „Termine / Abgaben“ prüfen, was aktuell ansteht.</li>
+    <li>Die nummerierte Themen-Kachel (zum Beispiel 1, 2, 3 …) anklicken und das Arbeitsmaterial öffnen.</li>
+  </ol>
+  <figure id="moodle-figure">
+    <img src="moodle.jpeg" alt="Screenshot einer Moodle-Kursseite mit nummerierten Themen-Kacheln" onerror="this.parentNode.classList.add('missing')">
+    <div class="placeholder">Hier erscheint der Moodle-Screenshot, sobald die Datei <strong>moodle.jpeg</strong> im selben Ordner wie diese Seite liegt.</div>
+    <figcaption>So sieht ein Moodle-Kurs aus: Oben stehen die Ankündigungen und die Termine mit Abgaben. Darunter ist jedes Thema eine nummerierte Kachel – ein Klick öffnet das zugehörige Arbeitsmaterial.</figcaption>
+  </figure>
+  <div class="tip"><h3>Unser Tipp</h3><p>Nutze ein iPad oder einen Laptop für die Übersicht – und wenn der Login hakt, wende dich direkt an deine Lehrkraft (oder IT-Lehrkräfte).</p></div>
+</article>
+
+<article id="kernzeiten">
+  <h2>Kernzeiten &amp; Zeiteinteilung</h2>
+  <h3>Worum geht's?</h3>
+  <p>In den Kernzeiten entscheidest du selbst, an welchem Fach und welcher Aufgabe du gerade arbeitest.</p>
+  <h3>So geht's</h3>
+  <ol>
+    <li>Zu Beginn der Stunde festlegen, welches Fach heute Priorität hat.</li>
+    <li>Wichtige und schwere Aufgaben zuerst erledigen.</li>
+    <li>Am Ende prüfen, ob du dein Tagesziel erreicht hast.</li>
+  </ol>
+  <div class="tip"><h3>Unser Tipp</h3><p>Teile deine Zeit bewusst ein und verschiebe wichtige Aufgaben nicht auf das Ende der Woche.</p></div>
+</article>
+
+<article id="raumwahl">
+  <h2>Raumwahl &amp; Orientierung</h2>
+  <h3>Worum geht's?</h3>
+  <p>Je nach Arbeitsphase kannst du verschiedene Lernräume nutzen – das Schulgebäude ist am Anfang aber groß und unübersichtlich.</p>
+  <h3>So geht's</h3>
+  <ol>
+    <li>Auf dem Raumplan nachsehen, welche Räume für deine Stufe freigegeben sind.</li>
+    <li>Ruhige Arbeitsbereiche für Einzelarbeit und Gruppenräume für Teams wählen.</li>
+    <li>Dich beim Verlassen des Klassenraums abmelden.</li>
+  </ol>
+  <div class="tip"><h3>Unser Tipp</h3><p>Bitte deine Lehrkräfte am Anfang um einen kurzen Rundgang durch das Gebäude und frag Mitschüler:innen nach dem Weg.</p></div>
+</article>
+
+<section class="faq wide" id="faq">
+  <h2>Häufige Anfangsschwierigkeiten (FAQ)</h2>
+  <dl>
+    <dt>„Ich weiß nicht, wie ein Kolloquium oder Coachinggespräch abläuft.“</dt>
+    <dd>Frage frühzeitig bei deinen Lehrer:innen nach einer kurzen Erklärung zum genauen Ablauf, bevor die Gespräche starten.</dd>
+    <dt>„Mir ist die Klasse oder der Raum zu groß und unruhig.“</dt>
+    <dd>Nutze die freigegebenen, ruhigeren Lernzonen außerhalb des Hauptraums, um konzentriert zu arbeiten.</dd>
+  </dl>
+</section>
+
+</main>
+
+<footer>
+  Projektwerkstatt TdoT · Station 6: KooL-Starterkit | Erstellt von Lenny, Noor, Riad, Mohammad &amp; Ali.
+</footer>
+
+</body>
+</html>
